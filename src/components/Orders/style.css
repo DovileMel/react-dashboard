@@ -1,10 +1,15 @@
 body{
   margin: 0;
-  background-color: #f2f2f2;
+  background-color: white;
   color: #19181C;
   padding: 0;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
+}
+
+section{
+  margin:0;
+  padding: 0;
 }
 
 .OrderContainer {
@@ -16,58 +21,7 @@ body{
   order: 1;
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #F2E653;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
 
-.sidenav a {
-    padding: 20px 20px 20px 40px;
-    text-decoration: none;
-    font-size: 40px;
-    color: #19181C;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 20px;
-    margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-
-#pageone{
-  display: none;
-  border: 2px solid black;
-  border-radius: 2px;
-  width: 100%;
-  margin: 0 auto;
-  height: 100%;
-  padding: 0;
-  background-color: white;
-  font-size: 14px;
-  z-index: 1;
-}
 
 .heading{
   background-color: white;
@@ -79,13 +33,6 @@ body{
 
 .title{
   font-size: 20px;
-}
-
-.close{
-  color: #4169E1;
-  font-size: 25px;
-  padding-right: 0;
-  text-align: right;
 }
 
 .panel-body{
@@ -123,7 +70,7 @@ li>.row{
 .row>.col{
   line-height: 1.5;
   padding-bottom: 1%;
-  
+
 }
 
 li{
@@ -142,23 +89,10 @@ img{
   }
 
 .order{
-  padding-top: 3%; 
-  text-align: left; 
+  padding-top: 3%;
+  text-align: left;
 }
 
-.menu{
-  padding: 1%;
-  font-size: 25px;
-  margin:3%;
-  position: fixed;
-  border: 1px solid silver;
-  border-radius: 5px;
-  color: silver;
-}
-
-.menu:hover{
-color: grey;
-}
 
 .box>li{
   padding: 0;
@@ -174,7 +108,7 @@ color: grey;
 padding: 0;
   }
 
- 
+
 .grey{
   color: grey;
 }
@@ -186,14 +120,3 @@ padding: 0;
 .options{
   border-top: 1px solid silver;
 }
-
-.menu_slide{
-  width: 40%;
-}
-
-@media screen and (max-width: 700px) {
-  .menu_slide{
-    width: 80%;
-  }
-}
-

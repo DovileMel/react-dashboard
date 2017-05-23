@@ -1,0 +1,22 @@
+body{
+  margin: 0;
+  background-color: white;
+  color: #19181C;
+  padding: 0;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+form {
+  background:white;
+  padding: 10%;
+  margin:40px auto;
+
+}
+
+
+
+button{
+  margin: 3%;
+}

@@ -65,8 +65,9 @@ const orders = [
 class CardsContaier extends Component {
   render() {
     return (
+
       <div className="OrderContainer">
-        {orders.map( (order, index) => 
+              {orders.map( (order, index) => 
           <UserCard key={index} order={order} />
         )};
       </div>

@@ -34,6 +34,7 @@ class UserCard extends Component {
 		})
 	}
 
+	
 	render() {
 		if (!this.state.isCanceled) {
 			return (

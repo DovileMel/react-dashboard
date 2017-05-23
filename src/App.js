@@ -1,20 +1,40 @@
+// Code modified 2017-05-23 by Jaroslav Siroic
+// My github: https://github.com/jaroslavsiroic
+
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import OrdersContainer from './components/Orders';
+
+import LoginContainer from './components/Login';
+import OrdersContainer from './components/Orders'
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { isLoggedIn: false };
+    this.onLoginClick = this.onLoginClick.bind(this);
+  }
+
+  onLoginClick(data) {
+    console.log(data);
+    console.log('lets say that user logged in...');
+    this.setState({isLoggedIn: true});
+  }
+
   render() {
+    const { isLoggedIn } = this.state;
+    const View = isLoggedIn ? <OrdersContainer/> : <LoginContainer onLoginClick={this.onLoginClick} />;
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React Dovile</h2>
+
+          <div className="row heading">
+            <div className="col col-xs-2"></div>
+            <div className="col col-xs-8 title"><b>Yellow Hammock</b></div>
+
+          </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-        <OrdersContainer />
+        { View }
       </div>
     );
   }
