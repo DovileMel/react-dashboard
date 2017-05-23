@@ -49,19 +49,23 @@ class userContainer extends Component {
 
     return (
       <div className="userContainer">
-        <div className="input-group">
+      <div className="row">
+        <div className="col col-xs-12 input-group">
             <div>
               <input type="text" ref='username' className="form-control" placeholder="Username" aria-describedby="basic-addon1"/>
             </div>
             <div>
-              <input type="text" ref='password' className="form-control" placeholder="Password" aria-describedby="basic-addon1"/>
+              <input type="password" ref='password' className="form-control" placeholder="Password" aria-describedby="basic-addon1"/>
             </div>
-          </div>
-            <div className="options">
-            <button onClick={this.logIn}>
+        </div>
+      </div>
+      <div className="row">
+            <div className="col col-xs-12 option1">
+            <button type="button" className="btn btn-success" onClick={this.logIn}>
               Log In
             </button>
-        </div>
+            </div>
+      </div>
       </div>
     );
   }
